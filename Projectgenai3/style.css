@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    width: 300px;
+    margin-right: 10px;
+}
+
+#projectionChart {
+    max-width: 100%;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+}
+
+.control label {
+    width: 250px;
+}
+
+.control span {
+    min-width: 80px;
+}
+
+.feedback-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}

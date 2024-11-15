@@ -60,7 +60,7 @@ document.getElementById('fileInput').addEventListener('change', (event) => {
         let formData = new FormData();
         formData.append('file', file);
 
-        fetch('http://localhost:5000/upload', {
+        fetch('http://localhost:5500/upload', {
             method: 'POST',
             body: formData
         })

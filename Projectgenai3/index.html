@@ -16,40 +16,59 @@
 
         <div class="upload-section mb-5">
             <h2>Upload Financial Data</h2>
-            <input type="file" id="fileInput" accept=".csv, .xlsx, .xls, .pdf">
+            <input type="file" id="fileInput" accept=".csv, .xlsx, .xls">
             <p id="fileName"></p>
         </div>
 
         <div class="scenario-section mb-5">
-            <h2>Select Scenario</h2>
-            <select id="scenarioSelect" class="form-control w-50">
-                <option value="neutral" selected>Neutral</option>
-                <option value="optimistic">Optimistic</option>
-                <option value="pessimistic">Pessimistic</option>
-            </select>
+            <h2>Select Sector and Scenario</h2>
+            <div class="form-group">
+                <label for="sectorSelect">Sector:</label>
+                <select id="sectorSelect" class="form-control w-50">
+                    <option value="technology">Technology</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="financials">Financials</option>
+                    <option value="industrials">Industrials</option>
+                    <option value="consumer_discretionary">Consumer Discretionary</option>
+                    <option value="consumer_staples">Consumer Staples</option>
+                    <option value="energy">Energy</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="materials">Materials</option>
+                    <option value="real_estate">Real Estate</option>
+                    <option value="communication_services">Communication Services</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="scenarioSelect">Scenario:</label>
+                <select id="scenarioSelect" class="form-control w-50">
+                    <option value="neutral" selected>Neutral</option>
+                    <option value="positive">Positive</option>
+                    <option value="negative">Negative</option>
+                </select>
+            </div>
         </div>
 
         <div class="controls-section mb-5">
             <h2>Adjust Financial Variables</h2>
             <div class="control mb-3">
                 <label for="revenueGrowth">Revenue Growth Rate (%):</label>
-                <input type="range" id="revenueGrowth" min="0" max="20" step="0.5" value="5">
+                <input type="range" id="revenueGrowth" min="-5" max="20" step="0.5" value="5">
                 <span id="revenueGrowthValue">5%</span>
             </div>
             <div class="control mb-3">
                 <label for="taxRate">Tax Rate (%):</label>
-                <input type="range" id="taxRate" min="0" max="50" step="1" value="25">
-                <span id="taxRateValue">25%</span>
+                <input type="range" id="taxRate" min="0" max="50" step="1" value="21">
+                <span id="taxRateValue">21%</span>
             </div>
             <div class="control mb-3">
-                <label for="operationalExpenses">Operational Expenses ($):</label>
-                <input type="range" id="operationalExpenses" min="0" max="1000000" step="10000" value="500000">
-                <span id="operationalExpensesValue">$500,000</span>
+                <label for="operatingExpenses">Operating Expenses ($):</label>
+                <input type="range" id="operatingExpenses" min="0" max="1000000" step="10000" value="200000">
+                <span id="operatingExpensesValue">$200,000</span>
             </div>
             <div class="control mb-3">
-                <label for="cogs">Cost of Goods Sold (COGS) (% of Revenue):</label>
-                <input type="range" id="cogs" min="0" max="100" step="1" value="40">
-                <span id="cogsValue">40%</span>
+                <label for="cogsPct">Cost of Goods Sold (COGS) (% of Revenue):</label>
+                <input type="range" id="cogsPct" min="0" max="100" step="1" value="60">
+                <span id="cogsPctValue">60%</span>
             </div>
             <div class="control mb-3">
                 <label for="discountRate">Discount Rate (%):</label>
@@ -61,10 +80,12 @@
                 <input type="range" id="interestRate" min="0" max="15" step="0.5" value="5">
                 <span id="interestRateValue">5%</span>
             </div>
+            <button id="calculateButton" class="btn btn-success mt-3">Calculate Projections</button>
         </div>
 
         <div class="projection-section mb-5">
             <h2>Financial Projections</h2>
+            <div id="projectionsOutput"></div>
             <canvas id="projectionChart" width="800" height="400"></canvas>
         </div>
 

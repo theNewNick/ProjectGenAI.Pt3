@@ -1,0 +1,145 @@
+/* General body styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container and section styling */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Control sections and sliders */
+div {
+    margin-bottom: 20px;
+}
+
+div label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+div input[type="range"] {
+    width: 100%;
+}
+
+div span {
+    font-weight: bold;
+}
+
+/* Input fields, select, and textarea styling */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Projections output */
+#projectionsOutput {
+    margin-top: 20px;
+}
+
+#projectionsOutput h4 {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Chart styling */
+#projectionChart {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Feedback form styling */
+section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Assumption feedback styling */
+.assumption-feedback {
+    margin-bottom: 15px;
+}
+
+.assumption-feedback label {
+    display: inline-block;
+    width: 200px;
+    font-weight: 500;
+}
+
+.assumption-feedback select {
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

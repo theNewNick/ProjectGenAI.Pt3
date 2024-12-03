@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Modeling Assistant</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Optional: Include favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <h1>Financial Modeling Assistant</h1>
+
+    <!-- File Upload Section -->
+    <section>
+        <h2>Upload Financial Data</h2>
+        <form id="fileUploadForm">
+            <label for="incomeStatementInput">Income Statement:</label>
+            <input type="file" id="incomeStatementInput" name="income_statement" accept=".csv, .xls, .xlsx"><br><br>
+            <label for="balanceSheetInput">Balance Sheet:</label>
+            <input type="file" id="balanceSheetInput" name="balance_sheet" accept=".csv, .xls, .xlsx"><br><br>
+            <label for="cashFlowStatementInput">Cash Flow Statement:</label>
+            <input type="file" id="cashFlowStatementInput" name="cash_flow_statement" accept=".csv, .xls, .xlsx"><br><br>
+            <button type="button" id="uploadButton">Upload Files</button>
+        </form>
+        <p id="fileUploadMessage"></p>
+    </section>
+
+    <!-- Company Information Section -->
+    <section>
+        <h2>Company Information</h2>
+        <label for="stockTicker">Stock Ticker:</label>
+        <input type="text" id="stockTicker" placeholder="Enter Stock Ticker"><br><br>
+        <label for="sharesOutstanding">Shares Outstanding:</label>
+        <input type="number" id="sharesOutstanding" value="1">
+    </section>
+
+    <!-- Sector, Industry, and Scenario Selection -->
+    <section>
+        <h2>Select Sector, Industry, and Scenario</h2>
+        <label for="sectorSelect">Sector:</label>
+        <select id="sectorSelect">
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <label for="industrySelect">Industry:</label>
+        <select id="industrySelect">
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <label for="subIndustrySelect">Sub-Industry:</label>
+        <select id="subIndustrySelect">
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <label for="scenarioSelect">Scenario:</label>
+        <select id="scenarioSelect">
+            <option value="Base Case">Base Case</option>
+            <option value="Optimistic">Optimistic</option>
+            <option value="Pessimistic">Pessimistic</option>
+            <!-- Add more scenarios as needed -->
+        </select>
+    </section>
+
+    <!-- Financial Assumptions Sliders -->
+    <section>
+        <h2>Adjust Financial Assumptions</h2>
+        <div>
+            <label for="revenueGrowth">Revenue Growth Rate (%): <span id="revenueGrowthValue">5%</span></label>
+            <input type="range" id="revenueGrowth" min="0" max="50" step="0.5" value="5">
+        </div>
+        <div>
+            <label for="taxRate">Tax Rate (%): <span id="taxRateValue">21%</span></label>
+            <input type="range" id="taxRate" min="0" max="50" step="1" value="21">
+        </div>
+        <div>
+            <label for="operatingExpenses">Operating Expenses (% of Revenue): <span id="operatingExpensesValue">20%</span></label>
+            <input type="range" id="operatingExpenses" min="0" max="100" step="1" value="20">
+        </div>
+        <div>
+            <label for="cogsPct">COGS (% of Revenue): <span id="cogsPctValue">60%</span></label>
+            <input type="range" id="cogsPct" min="0" max="100" step="1" value="60">
+        </div>
+        <div>
+            <label for="discountRate">Discount Rate (%): <span id="discountRateValue">10%</span></label>
+            <input type="range" id="discountRate" min="0" max="20" step="0.5" value="10">
+        </div>
+    </section>
+
+    <!-- Calculate Button -->
+    <section>
+        <button id="calculateButton">Calculate Projections</button>
+    </section>
+
+    <!-- Projections Output -->
+    <section>
+        <h2>Projections Output</h2>
+        <div id="projectionsOutput"></div>
+        <canvas id="projectionChart" width="800" height="400"></canvas>
+    </section>
+
+    <!-- Feedback Form -->
+    <section>
+        <h2>Provide Feedback</h2>
+        <form id="feedbackForm">
+            <div>
+                <label for="accuracyRating">Overall Accuracy Rating (1-5):</label>
+                <input type="number" id="accuracyRating" name="accuracyRating" min="1" max="5" required>
+            </div>
+
+            <!-- Assumption Feedback Section -->
+            <div>
+                <h3>Assumption Feedback</h3>
+                <div class="assumption-feedback">
+                    <label>Revenue Growth Rate:</label>
+                    <select name="revenueGrowthFeedback" id="revenueGrowthFeedback">
+                        <option value="too_low">Too Low</option>
+                        <option value="about_right">About Right</option>
+                        <option value="too_high">Too High</option>
+                    </select>
+                </div>
+                <div class="assumption-feedback">
+                    <label>Tax Rate:</label>
+                    <select name="taxRateFeedback" id="taxRateFeedback">
+                        <option value="too_low">Too Low</option>
+                        <option value="about_right">About Right</option>
+                        <option value="too_high">Too High</option>
+                    </select>
+                </div>
+                <div class="assumption-feedback">
+                    <label>COGS Percentage:</label>
+                    <select name="cogsPctFeedback" id="cogsPctFeedback">
+                        <option value="too_low">Too Low</option>
+                        <option value="about_right">About Right</option>
+                        <option value="too_high">Too High</option>
+                    </select>
+                </div>
+                <div class="assumption-feedback">
+                    <label>Operating Expenses Percentage:</label>
+                    <select name="operatingExpensesFeedback" id="operatingExpensesFeedback">
+                        <option value="too_low">Too Low</option>
+                        <option value="about_right">About Right</option>
+                        <option value="too_high">Too High</option>
+                    </select>
+                </div>
+                <div class="assumption-feedback">
+                    <label>Discount Rate:</label>
+                    <select name="discountRateFeedback" id="discountRateFeedback">
+                        <option value="too_low">Too Low</option>
+                        <option value="about_right">About Right</option>
+                        <option value="too_high">Too High</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label for="feedbackComments">Additional Comments:</label><br>
+                <textarea id="feedbackComments" name="feedbackComments" rows="4" cols="50"></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="feedbackMessage"></p>
+    </section>
+
+    <!-- Include your JavaScript file -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

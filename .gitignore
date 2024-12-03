@@ -12,3 +12,4 @@ instance/
 
 # Ignore uploads
 uploads/
+.env

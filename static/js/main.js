@@ -5,7 +5,7 @@ let revenueGrowth = 5; // in percent
 let taxRate = 21; // in percent
 let operatingExpensesPct = 20; // Operating Expenses (% of Revenue)
 let cogsPct = 60; // Cost of Goods Sold (% of Revenue)
-let discountRate = 10; // in percent
+let wacc = 10; // in percent (Weighted Average Cost of Capital)
 let sharesOutstanding = 1; // Default shares outstanding
 let assumptionSetId = null; // To store assumption_set_id from the server
 
@@ -15,7 +15,7 @@ function updateDisplayValues() {
     document.getElementById('taxRateValue').innerText = `${taxRate}%`;
     document.getElementById('operatingExpensesValue').innerText = `${operatingExpensesPct}%`;
     document.getElementById('cogsPctValue').innerText = `${cogsPct}%`;
-    document.getElementById('discountRateValue').innerText = `${discountRate}%`;
+    document.getElementById('discountRateValue').innerText = `${wacc}%`;
 }
 
 updateDisplayValues();
@@ -46,8 +46,8 @@ document.getElementById('cogsPct').addEventListener('input', (event) => {
 });
 
 document.getElementById('discountRate').addEventListener('input', (event) => {
-    discountRate = parseFloat(event.target.value);
-    document.getElementById('discountRateValue').innerText = `${discountRate}%`;
+    wacc = parseFloat(event.target.value);
+    document.getElementById('discountRateValue').innerText = `${wacc}%`;
     calculateProjections();
 });
 
@@ -270,7 +270,7 @@ function calculateProjections(isInitialCalculation = false) {
         updatedAssumptions.tax_rate = taxRate / 100;
         updatedAssumptions.operating_expenses_pct = operatingExpensesPct / 100;
         updatedAssumptions.cogs_pct = cogsPct / 100;
-        updatedAssumptions.discount_rate = discountRate / 100;
+        updatedAssumptions.wacc = wacc / 100;
         updatedAssumptions.terminal_growth_rate = 0.02;
     }
 
@@ -314,7 +314,7 @@ function setSlidersWithAdjustedAssumptions(adjustedAssumptions) {
     taxRate = adjustedAssumptions.tax_rate * 100;
     operatingExpensesPct = adjustedAssumptions.operating_expenses_pct * 100;
     cogsPct = adjustedAssumptions.cogs_pct * 100;
-    discountRate = adjustedAssumptions.discount_rate * 100;
+    wacc = adjustedAssumptions.wacc * 100;
     // Shares outstanding remains as input by the user
 
     // Update sliders
@@ -322,7 +322,7 @@ function setSlidersWithAdjustedAssumptions(adjustedAssumptions) {
     document.getElementById('taxRate').value = taxRate;
     document.getElementById('operatingExpenses').value = operatingExpensesPct;
     document.getElementById('cogsPct').value = cogsPct;
-    document.getElementById('discountRate').value = discountRate;
+    document.getElementById('discountRate').value = wacc;
 
     updateDisplayValues();
 }
@@ -402,7 +402,7 @@ document.getElementById('feedbackForm').addEventListener('submit', (event) => {
         tax_rate: document.getElementById('taxRateFeedback').value,
         cogs_pct: document.getElementById('cogsPctFeedback').value,
         operating_expenses_pct: document.getElementById('operatingExpensesFeedback').value,
-        discount_rate: document.getElementById('discountRateFeedback').value
+        wacc: document.getElementById('discountRateFeedback').value
     };
 
     // Check if assumptionSetId is available

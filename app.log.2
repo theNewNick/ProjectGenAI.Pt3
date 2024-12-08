@@ -1,0 +1,1046 @@
+2024-12-05 08:15:37,133 DEBUG: Agent adjustments before collaboration: {'sector_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'sub_industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'scenario_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.25, 'cogs_pct': 0.75, 'wacc': 0.08, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.85}, 'company_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.07, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'feedback_agent': {'revenue_growth_rate': 0.8, 'tax_rate': 0.3, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.7}, 'historical_data_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}, 'sentiment_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}} [in /home/ec2-user/financial_modeling_assistant/app.py:814]
+2024-12-05 08:15:42,233 DEBUG: Agent output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.08,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.85
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.07,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.7
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:42,233 DEBUG: Raw OpenAI output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.08,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.85
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.07,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.7
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:843]
+2024-12-05 08:15:42,233 DEBUG: Cleaned OpenAI output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.08,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.85
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.07,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.7
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:847]
+2024-12-05 08:15:42,234 DEBUG: Refined agent adjustments: {'sector_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'sub_industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'scenario_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.25, 'cogs_pct': 0.75, 'wacc': 0.08, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.85}, 'company_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.07, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'feedback_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.7}, 'historical_data_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}, 'sentiment_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}} [in /home/ec2-user/financial_modeling_assistant/app.py:852]
+2024-12-05 08:15:43,146 DEBUG: Agent output: {
+  "sector_agent": 0.1,
+  "industry_agent": 0.1,
+  "sub_industry_agent": 0.1,
+  "scenario_agent": 0.1,
+  "company_agent": 0.2,
+  "feedback_agent": 0.05,
+  "historical_data_agent": 0.25,
+  "sentiment_agent": 0.1
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:44,423 DEBUG: Agent output: {
+    "reasoning": "After reviewing the financial assumptions provided by each agent, here are the assessments and confidence scores:",
+    "confidence_scores": {
+        "sector_agent": 0.8,
+        "industry_agent": 0.7,
+        "sub_industry_agent": 0.6,
+        "scenario_agent": 0.75,
+        "company_agent": 0.85,
+        "feedback_agent": 0.65,
+        "historical_data_agent": 0.9,
+        "sentiment_agent": 0.7
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:44,424 ERROR: Error in /calculate route [in /home/ec2-user/financial_modeling_assistant/app.py:1272]
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: assumption_set
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/app.py", line 1253, in calculate_intrinsic_value
+    db.session.commit()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
+    return self._proxied.commit()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: assumption_set
+[SQL: INSERT INTO assumption_set (sector, industry, sub_industry, scenario, stock_ticker, revenue_growth_rate, tax_rate, cogs_pct, wacc, terminal_growth_rate, operating_expenses_pct) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Consumer Discretionary', 'Consumer Services', 'Hotels, Restaurants & Leisure', 'Base Case', 'DIS', 0.060447284345047925, 0.23492012779552715, 0.6277955271565495, 0.09488817891373803, 0.02527156549520767, 0.5501597444089457)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-05 08:15:45,220 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.06,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.65,
+  "WACC": 0.1,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.8
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:45,994 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.06,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.65,
+  "WACC": 0.12,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.75
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:46,722 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.06,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.65,
+  "WACC": 0.12,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.75
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:47,545 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.05,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.75,
+  "WACC": 0.1,
+  "terminal_growth_rate": 0.02,
+  "operating_expenses_pct": 0.8
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:48,475 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.08,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.60,
+  "WACC": 0.10,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.75
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:48,476 ERROR: Error summarizing feedback [in /home/ec2-user/financial_modeling_assistant/app.py:159]
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: feedback
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/app.py", line 115, in summarize_feedback
+    feedback_entries = Feedback.query.join(AssumptionSet).filter(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2362, in execute
+    return self._execute_internal(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2247, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: feedback
+[SQL: SELECT feedback.id AS feedback_id, feedback.sector AS feedback_sector, feedback.industry AS feedback_industry, feedback.sub_industry AS feedback_sub_industry, feedback.scenario AS feedback_scenario, feedback.score AS feedback_score, feedback.comments AS feedback_comments, feedback.created_at AS feedback_created_at, feedback.revenue_growth_feedback AS feedback_revenue_growth_feedback, feedback.tax_rate_feedback AS feedback_tax_rate_feedback, feedback.cogs_pct_feedback AS feedback_cogs_pct_feedback, feedback.operating_expenses_feedback AS feedback_operating_expenses_feedback, feedback.wacc_feedback AS feedback_wacc_feedback, feedback.assumption_set_id AS feedback_assumption_set_id 
+FROM feedback JOIN assumption_set ON assumption_set.id = feedback.assumption_set_id 
+WHERE assumption_set.sector = ? AND assumption_set.industry = ? AND assumption_set.sub_industry = ? AND assumption_set.scenario = ?]
+[parameters: ('Consumer Discretionary', 'Consumer Services', 'Hotels, Restaurants & Leisure', 'Base Case')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-05 08:15:49,757 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.8,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.6,
+  "WACC": 0.1,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.7
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:49,783 WARNING: Field 'Income Before Tax' not found in financial data for DIS. [in /home/ec2-user/financial_modeling_assistant/app.py:625]
+2024-12-05 08:15:50,011 DEBUG: Agent adjustments before collaboration: {'sector_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.8}, 'industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'sub_industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'scenario_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.25, 'cogs_pct': 0.75, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.8}, 'company_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'feedback_agent': {'revenue_growth_rate': 0.8, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.7}, 'historical_data_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}, 'sentiment_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}} [in /home/ec2-user/financial_modeling_assistant/app.py:814]
+2024-12-05 08:15:54,813 DEBUG: Agent output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.8
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.8
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:54,813 DEBUG: Raw OpenAI output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.8
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.8
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:843]
+2024-12-05 08:15:54,813 DEBUG: Cleaned OpenAI output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.8
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.8
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:847]
+2024-12-05 08:15:54,813 DEBUG: Refined agent adjustments: {'sector_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.8}, 'industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'sub_industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'scenario_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.25, 'cogs_pct': 0.75, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.8}, 'company_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'feedback_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'historical_data_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}, 'sentiment_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}} [in /home/ec2-user/financial_modeling_assistant/app.py:852]
+2024-12-05 08:15:55,658 DEBUG: Agent output: {
+  "sector_agent": 0.1,
+  "industry_agent": 0.1,
+  "sub_industry_agent": 0.1,
+  "scenario_agent": 0.1,
+  "company_agent": 0.2,
+  "feedback_agent": 0.05,
+  "historical_data_agent": 0.3,
+  "sentiment_agent": 0.05
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:58,657 DEBUG: Agent output: {
+    "reasoning": "After reviewing the financial assumptions provided by each agent, here are the comparisons and assessments: The sector_agent's assumptions are in line with industry trends and historical data, showing a good understanding of the broader economic environment. The industry_agent's assumptions are mostly consistent with sector trends but show some discrepancies in growth projections. The sub_industry_agent's assumptions align well with industry specifics and historical data, demonstrating a deep understanding of the sub-industry dynamics. The scenario_agent's assumptions are logical and coherent, considering various potential scenarios and their impacts. The company_agent's assumptions are detailed and specific to the company's operations, reflecting a strong grasp of internal factors. The feedback_agent's assumptions provide valuable insights and suggestions for improvement. The historical_data_agent's assumptions serve as a benchmark for evaluating other agents' projections, highlighting deviations from past performance. The sentiment_agent's assumptions reflect market sentiment and investor behavior, contributing to a holistic view of the financial landscape.",
+    "confidence_scores": {
+        "sector_agent": 0.8,
+        "industry_agent": 0.7,
+        "sub_industry_agent": 0.85,
+        "scenario_agent": 0.75,
+        "company_agent": 0.8,
+        "feedback_agent": 0.7,
+        "historical_data_agent": 0.9,
+        "sentiment_agent": 0.75
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:15:58,658 ERROR: Error in /calculate route [in /home/ec2-user/financial_modeling_assistant/app.py:1272]
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: assumption_set
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/app.py", line 1253, in calculate_intrinsic_value
+    db.session.commit()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
+    return self._proxied.commit()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: assumption_set
+[SQL: INSERT INTO assumption_set (sector, industry, sub_industry, scenario, stock_ticker, revenue_growth_rate, tax_rate, cogs_pct, wacc, terminal_growth_rate, operating_expenses_pct) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Consumer Discretionary', 'Consumer Services', 'Hotels, Restaurants & Leisure', 'Base Case', 'DIS', 0.060092307692307695, 0.23486153846153843, 0.6283076923076923, 0.1038153846153846, 0.02529230769230769, 0.5513846153846154)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-05 08:15:59,494 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.06,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.65,
+  "WACC": 0.12,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.75
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:00,230 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.06,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.65,
+  "WACC": 0.12,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.75
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:01,076 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.06,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.65,
+  "WACC": 0.12,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.75
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:01,800 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.05,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.75,
+  "WACC": 0.1,
+  "terminal_growth_rate": 0.02,
+  "operating_expenses_pct": 0.8
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:02,553 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.08,
+  "tax_rate": 0.25,
+  "cogs_pct": 0.60,
+  "WACC": 0.10,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.75
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:02,554 ERROR: Error summarizing feedback [in /home/ec2-user/financial_modeling_assistant/app.py:159]
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: feedback
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/app.py", line 115, in summarize_feedback
+    feedback_entries = Feedback.query.join(AssumptionSet).filter(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2362, in execute
+    return self._execute_internal(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2247, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/context.py", line 305, in orm_execute_statement
+    result = conn.execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: feedback
+[SQL: SELECT feedback.id AS feedback_id, feedback.sector AS feedback_sector, feedback.industry AS feedback_industry, feedback.sub_industry AS feedback_sub_industry, feedback.scenario AS feedback_scenario, feedback.score AS feedback_score, feedback.comments AS feedback_comments, feedback.created_at AS feedback_created_at, feedback.revenue_growth_feedback AS feedback_revenue_growth_feedback, feedback.tax_rate_feedback AS feedback_tax_rate_feedback, feedback.cogs_pct_feedback AS feedback_cogs_pct_feedback, feedback.operating_expenses_feedback AS feedback_operating_expenses_feedback, feedback.wacc_feedback AS feedback_wacc_feedback, feedback.assumption_set_id AS feedback_assumption_set_id 
+FROM feedback JOIN assumption_set ON assumption_set.id = feedback.assumption_set_id 
+WHERE assumption_set.sector = ? AND assumption_set.industry = ? AND assumption_set.sub_industry = ? AND assumption_set.scenario = ?]
+[parameters: ('Consumer Discretionary', 'Consumer Services', 'Hotels, Restaurants & Leisure', 'Base Case')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-05 08:16:03,411 DEBUG: Agent output: {
+  "revenue_growth_rate": 0.8,
+  "tax_rate": 0.3,
+  "cogs_pct": 0.6,
+  "WACC": 0.1,
+  "terminal_growth_rate": 0.03,
+  "operating_expenses_pct": 0.7
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:03,438 WARNING: Field 'Income Before Tax' not found in financial data for DIS. [in /home/ec2-user/financial_modeling_assistant/app.py:625]
+2024-12-05 08:16:03,661 DEBUG: Agent adjustments before collaboration: {'sector_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'sub_industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'scenario_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.25, 'cogs_pct': 0.75, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.8}, 'company_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'feedback_agent': {'revenue_growth_rate': 0.8, 'tax_rate': 0.3, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.7}, 'historical_data_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}, 'sentiment_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}} [in /home/ec2-user/financial_modeling_assistant/app.py:814]
+2024-12-05 08:16:09,570 DEBUG: Agent output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.8
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:09,570 DEBUG: Raw OpenAI output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.8
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:843]
+2024-12-05 08:16:09,570 DEBUG: Cleaned OpenAI output: {
+    "sector_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "sub_industry_agent": {
+        "revenue_growth_rate": 0.06,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.65,
+        "wacc": 0.12,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "scenario_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.75,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.8
+    },
+    "company_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "feedback_agent": {
+        "revenue_growth_rate": 0.08,
+        "tax_rate": 0.25,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.03,
+        "operating_expenses_pct": 0.75
+    },
+    "historical_data_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    },
+    "sentiment_agent": {
+        "revenue_growth_rate": 0.05,
+        "tax_rate": 0.21,
+        "cogs_pct": 0.6,
+        "wacc": 0.1,
+        "terminal_growth_rate": 0.02,
+        "operating_expenses_pct": 0.2
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:847]
+2024-12-05 08:16:09,570 DEBUG: Refined agent adjustments: {'sector_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'sub_industry_agent': {'revenue_growth_rate': 0.06, 'tax_rate': 0.25, 'cogs_pct': 0.65, 'wacc': 0.12, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'scenario_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.25, 'cogs_pct': 0.75, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.8}, 'company_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'feedback_agent': {'revenue_growth_rate': 0.08, 'tax_rate': 0.25, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.03, 'operating_expenses_pct': 0.75}, 'historical_data_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}, 'sentiment_agent': {'revenue_growth_rate': 0.05, 'tax_rate': 0.21, 'cogs_pct': 0.6, 'wacc': 0.1, 'terminal_growth_rate': 0.02, 'operating_expenses_pct': 0.2}} [in /home/ec2-user/financial_modeling_assistant/app.py:852]
+2024-12-05 08:16:10,408 DEBUG: Agent output: {
+  "sector_agent": 0.1,
+  "industry_agent": 0.1,
+  "sub_industry_agent": 0.1,
+  "scenario_agent": 0.1,
+  "company_agent": 0.2,
+  "feedback_agent": 0.05,
+  "historical_data_agent": 0.3,
+  "sentiment_agent": 0.05
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:11,853 DEBUG: Agent output: {
+    "reasoning": "After reviewing the financial assumptions provided by each agent, here are the key observations and confidence scores:",
+    "confidence_scores": {
+        "sector_agent": 0.8,
+        "industry_agent": 0.7,
+        "sub_industry_agent": 0.6,
+        "scenario_agent": 0.75,
+        "company_agent": 0.85,
+        "feedback_agent": 0.7,
+        "historical_data_agent": 0.9,
+        "sentiment_agent": 0.7
+    }
+} [in /home/ec2-user/financial_modeling_assistant/app.py:204]
+2024-12-05 08:16:11,854 ERROR: Error in /calculate route [in /home/ec2-user/financial_modeling_assistant/app.py:1272]
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: assumption_set
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/financial_modeling_assistant/app.py", line 1253, in calculate_intrinsic_value
+    db.session.commit()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
+    return self._proxied.commit()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/financial_modeling_assistant/venv/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: assumption_set
+[SQL: INSERT INTO assumption_set (sector, industry, sub_industry, scenario, stock_ticker, revenue_growth_rate, tax_rate, cogs_pct, wacc, terminal_growth_rate, operating_expenses_pct) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Consumer Discretionary', 'Consumer Services', 'Hotels, Restaurants & Leisure', 'Base Case', 'DIS', 0.060377358490566045, 0.23465408805031443, 0.6273584905660378, 0.10528301886792454, 0.025220125786163523, 0.5437106918238994)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
